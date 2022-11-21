@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.profile-box{
+    padding: 20px;
+    height: 350px;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 40px;
+    backdrop-filter: blur(15px) saturate(191%);
+    -webkit-backdrop-filter: blur(15px) saturate(191%);
+    background-color: rgba(255, 255, 255, 0.58);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+}
+
+.profile-box img{
+    height: 120px;
+}
+
+.profile-box img:hover{
+    transform: scale(120%);
+}
+
+.profile-box h1{
+    text-transform: uppercase;
+}
+
+.profile-box h1:hover{
+    transform: scale(120%);
+}
+
+.social-links{
+    width: 80%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 80%;
+    padding: 5px;
+    border: none;
+    background-color: #11998e;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+.btn:hover{
+    background-color: #38ef7d;
+    color: #11998e;
+    letter-spacing: 10px;
+    box-shadow: -2px 0px 63px -8px rgba(0,0,0,0.75);
+
+}
+
+i{
+    font-size: 22px;
+    color: #11998e;
+} 
+
+
+i:hover{
+    color: black;
+    font-size: 24px;
+}
+
+
+/* Responive Design */
+
+@media(min-width:768px){
+
+    .container{
+        background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+}
+
